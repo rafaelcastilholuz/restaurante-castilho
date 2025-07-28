@@ -1,0 +1,146 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ff4747; /* Vermelho forte */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: #ff4747; /* Efeito de hover */
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 400px;
+    background-image: url('seu-banner.jpg'); /* Substitua com a imagem do seu banner */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 36px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Para destacar o texto */
+}
+
+/* Estilos do conteúdo */
+.content {
+    padding: 50px 20px;
+}
+
+/* Cards (destaques de pratos) */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.card p {
+    color: #666;
+    font-size: 16px;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito de levitar quando passa o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Seções */
+section {
+    margin-bottom: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .banner {
+        height: 300px;
+    }
+
+    .banner h2 {
+        font-size: 28px;
+    }
+}
